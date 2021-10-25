@@ -1,0 +1,115 @@
+.container{
+    
+    margin:auto;
+    width: 50%;
+    height: 420px;
+    border: black;
+    border-style: solid;
+    text-align: center;
+    position: relative;
+}
+.chatrooms{
+    margin:auto;
+    width: 50%;
+    height: 420px;
+    border: black;
+    border-style: solid;
+    text-align: center;
+    position: relative;
+}
+.button-container{
+    margin: 3%;
+    padding: 3px;
+}
+.newroompart{
+    
+    margin: 0%;
+    
+}
+.chat{
+    max-height: 270px;
+    overflow-y: auto;
+}
+.display{
+    display: none;
+}
+
+
+.message-form{
+    position: absolute;   
+    width: 100%;
+    bottom: 5%;
+    height: 30px;
+}
+
+.message-input{
+    width: 80%;
+    display: inline;
+    height:30px;
+}
+.message-submit{
+    height: 30px;
+    width: 15%;
+}
+.username-input{
+    width: 90%;
+    height: 30px;
+}
+.username-submit{
+    width: 30%;
+    height: 30px;
+}
+.username-form{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul{
+    padding: 20px;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+}
+.chatroomlistdiv{
+    position: relative;
+    height: 60%;
+    overflow-y: auto;
+}
+.incoming{
+    left: 10%;
+    text-align: start;
+}
+
+.sent{
+    text-align: end;
+    right: 10%;
+}
+
+hr{
+    border-top: 4px solid;
+}
+h2{
+    position: sticky;
+}
+.text-input{
+    width: 40%;
+}
+
+.displayAlert{
+    position: absolute;
+    background-color:darkgrey;
+    text-align: center;
+    width: 35%;
+    height: 10%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+.alertButton{
+    display: block;
+    
+}

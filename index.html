@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chatrooms">
+        <h2>Available Chatrooms</h2>
+        <hr style="margin:0;">  
+        
+        <div class="chatroomlistdiv"> 
+            <ul class="chatroomlist"> 
+            </ul>
+        </div>
+        <hr style="margin:0;">
+        <div class="button-container newroompart">
+            <h3>Do you want to create one?</h1>
+            <form class="new-room-form">
+                <input type="text" id="chatroom-name" class=" text-input" placeholder="Name of the room..">
+                <input type="button" id="createRoom" value="Create a new chatroom">   
+            </form>
+        </div>
+    </div>
+
+    <div class="container display" >
+        <h2>Chatroom</h2>
+        <hr>
+        <div class="chat">
+            <ul class="chat-ul">
+                
+            </ul>
+            
+        </div>
+        <form class="message-form">
+            <input class="message-input" type="text" id="message" placeholder="write your message here..">
+            <input class="message-submit" type="submit" value="send">
+        </form>
+    </div>
+
+    <div class="container enterance display">
+        
+        <form class="username-form">
+            <input class="username-input" type="text" id="message" placeholder="PLEASE ENTER YOUR USERNAME">
+            <input class="username-submit" type="submit" value="SIGN IN">
+        </form>
+    </div>
+    
+    
+</body>
+    <script type="module" src="sandbox.js"></script>
+    <script type="module" src="app.js"></script>
+    
+</html>
