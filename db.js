@@ -1,6 +1,4 @@
-    //bu importlari browser modules olarak aldik cunku kullanimi kolay direkt browserda calisir
-    //ancak productiona giderken module bundlerlar kullanilir webpack rollup gibi cunku optimizasyon saglar
-    //oyle olunca direkt bilgisayara firebase kurup(npm install firebase) libraryden cekmemiz gerekir.
+
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
     import {getDoc,where,query, onSnapshot,getFirestore,collection, addDoc,getDocs,setDoc,doc } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js";
     import { user} from "./app.js";
@@ -11,7 +9,7 @@
     const chatBox=document.querySelector(".chat");
 
     const firebaseConfig = {
-      apiKey: "AIzaSyCsWlIzayw72OGAmPEns8cuCMyxwx2gZAQ",
+      apiKey: undefined,
       authDomain: "js-chatapp-6011a.firebaseapp.com",
       projectId: "js-chatapp-6011a",
       storageBucket: "js-chatapp-6011a.appspot.com",
@@ -71,19 +69,6 @@
       });
           return unsubscribe;
     }
-
-    //getAvailableChatrooms();
-
-
-    // //overwrite bu şekilde yapilir, once overwrite etmek istedigimiz documenti ref olarak aliriz
-    // //eger overwrite edilecek documentin olup olmadigindan emin olunmazsa
-    // //3. parametre olarak merge:true eklenir.(tum documentleri overwrite etmesini onlemen icin)
-    // await setDoc(doc(db,"cities","LA"),{capital:"yes"},{merge:true});
-    
-    // //tum documenti overwrite etmedne sadece bir fieldi update etmek icin
-    // await updateDoc(ref,{});
-
-    // //data direkt bir classin objesi olarak  da yollanip alinabilir
     
     function bubbleSort(arr) {
       for(let j=0;j<arr.length-1;j++) {
